@@ -1,0 +1,234 @@
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+	/* start editing from here */
+	a{text-decoration:none;}
+	.txt-rt{text-align:right;}/* text align right */
+	.txt-lt{text-align:left;}/* text align left */
+	.txt-center{text-align:center;}/* text align center */
+	.float-rt{float:right;}/* float right */
+	.float-lt{float:left;}/* float left */
+	.clear{clear:both;}/* clear float */
+	.pos-relative{position:relative;}/* Position Relative */
+	.pos-absolute{position:absolute;}/* Position Absolute */
+	.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+	.vertical-top{	vertical-align:top;}/* vertical align top */
+	nav.vertical ul li{	display:block;}/* vertical menu */
+	nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+	/*img{max-width:100%;}*/
+	/*end reset*/
+
+
+/****-----start-body----****/
+
+
+body{
+	background-color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	color:#1e1e1e;
+}
+.main{
+    margin: 5em auto 0;
+    width: 100%;
+}
+.red {
+   	background-color: #e13929;
+}
+
+.logoXL {
+	width: 285px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+.logoL {
+	width: 90%;
+	height: 158px;
+	margin: 12em auto 0;
+	text-align: right;
+}
+
+.logoS {
+	position: absolute;
+	top:10px;
+	right: 10px;
+	width: 65px;
+	height: 57px;
+}
+
+.msgWelc {
+	width: 90%;
+	height: 110px;
+	margin: 10em auto 0;
+}
+.msgThanks {
+	width: 735px;
+	height: 168px;
+	margin: 0 0 0 4em;
+}
+.pag1 {
+	position: absolute;
+	top:10px;
+	left: 10px;
+	width: 327px;
+	height: 83px;
+}
+
+
+.login{
+	padding:2em 0;
+}
+.inset {
+	position:relative;
+    padding: 2.5em;
+}
+.inpSL {
+	width: 47%;
+    float: left;
+    margin-right: 2.0em;
+}
+.inpSR {
+	width: 47%;
+    float: left;
+}
+
+form span {
+    display: block;
+    font-size: .9em;
+    color: #ABABAB;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type="text"],input[type="Password"],textarea {
+    padding: 20px;
+    width: 93.4%;
+    font-size: 1.5em;
+    margin: 3px 0px 25px;
+    color: #000;
+    background: #eeeeee;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    outline: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    	border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+}
+textarea:hover, input[type="text"]:hover,input[type="Password"]:hover,#active{
+	border:none;
+	outline:none;
+}
+textarea{
+	text-align: left;
+	min-height: 300px;
+}
+
+
+.sign {
+    padding: 10px 0 0;
+    text-align: center;
+}
+.submit {
+    margin: 0 auto;
+    padding: 0;
+    float:right;
+
+    width: 86px;
+    height: 86px;
+
+    border: none;
+    outline: none;
+    
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-size: 0.9em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+ 
+}
+
+.back {
+    margin: 0 auto;
+    padding: 0;
+    float:left;
+
+    width: 86px;
+    height: 86px;
+
+    border: none;
+    outline: none;
+    
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    font-size: 0.9em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+ 
+}
+
+.submit:hover
+.back:hover {
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.copy-right {
+    text-align: center;
+    width: 97%;
+    margin: 10em auto 0em;
+}
+.copy-right p {
+	color: #FFF;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+}
+.copy-right p a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	color: #1567A5;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+/*----start-responsive design 1280x800-----*/
+
+
+h1 {
+    font-size: 2.4em;
+font-family: 'Nixie One', cursive;
+    padding-bottom: 28px;
+    color: #fff;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 28px;
+    color: #0091e6;
+    text-align: center;
+}

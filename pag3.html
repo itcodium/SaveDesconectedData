@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='https://www.google.com/fonts#UsePlace:use/Collection:Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+      <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/abm.data.js" type="text/javascript"></script>
+    
+
+	
+ 
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var ergo_input = JSON.parse( localStorage.getItem("ergo_input"));
+            var f = new AbmData();
+            $("#AddItem").click(function () {
+                ergo_input.descripcion = $("#descripcion").val();
+
+                if ($("#descripcion").val().trim() == "") {
+                    if (confirm("Desea ingresar un desafio?") != false) {
+                        return;
+                    }
+
+                    
+                }
+
+                localStorage.setItem("ergo_input", ergo_input)
+                f.insertItem(ergo_input, ItemAdded_callback)
+                
+            });
+
+            $("#GetAllItems").click(function () {
+                f.GetAllItems(GetAllItems_callback)
+            });
+
+        });
+
+        function ItemAdded_callback(p) {
+            $("#ItemResult").append("<b>insertId:</b> " + p.insertId + "<Br> <b>rowsAffected: </b>" + p.rowsAffected);
+             location.href = "pag4.html"
+        }
+
+
+
+
+</script>
+ 
+</head>
+<body>
+	<div class="main">
+		<div class="logoS">
+			<img src="images/logoS.png" width="65" height="57" border="0">
+		</div>
+		<div class="pag1">
+			<img src="images/pas2.png" width="327" height="83" border="0">
+		</div>
+		<div class="login">
+			<div class="inset">
+				<!--start-main-->
+				<form>
+			         <div>
+						<span><textarea id="descripcion" placeholder="Mi desaf&iacute;o de negocios es: " required=" "></textarea></span>
+					 </div>
+					 
+					<div class="sign">
+						<div class="submit">
+							<a id="AddItem" target="_self"><img src="images/btnPost.png" /></a>
+						</div>
+						<div class="back">
+							<a href="pag2.html" target="_self"><img src="images/btnPrev.png" /></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
